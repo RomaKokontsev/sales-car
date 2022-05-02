@@ -1,0 +1,149 @@
+$Color-primary-100: #000000;
+$Color-primary-200: #f8f8f8;
+$Color-primary-300: #df4e3c;
+
+$Color-secondary-100: #aeaeae;
+$Color-secondary-200: #8d8d8d;
+$Color-secondary-300: #bdbdbd;
+$Color-secondary-400: #c4c4c4;
+$Color-secondary-500: #ffffff;
+$Color-secondary-600: #959595;
+$Color-secondary-700: #507a36;
+
+body {
+  font-family: "Noto Sans" !important;
+}
+
+.hero-container {
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  padding-top: 19px;
+  padding-bottom: 138px;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+  .navbar {
+    padding: 0;
+    margin-bottom: 136px;
+  }
+  .nav-item {
+    margin-right: 40px;
+    &:nth-child(3) {
+      margin-right: 45px;
+    }
+    &:nth-child(4) {
+      margin-right: 31px;
+    }
+    &:nth-child(5) {
+      margin-right: 0;
+    }
+  }
+  .nav-link {
+    color: $Color-primary-200;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.33;
+    padding: 0;
+  }
+
+  .hero {
+    .hero-title {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 1.36;
+      color: $Color-primary-200;
+      margin-bottom: 32px;
+    }
+    .hero-text-wrapper {
+      display: flex;
+      margin-bottom: 72px;
+
+      .text {
+        display: block;
+        width: 295px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.33;
+        color: $Color-primary-200;
+      }
+    }
+    .btn {
+      width: 296px;
+      height: 56px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 27px;
+      color: $Color-primary-200;
+      border: 2px solid $Color-primary-200;
+      box-sizing: border-box;
+      border-radius: 15px;
+    }
+    .btn-outline-dark:hover,
+    .btn-outline-dark:focus {
+      color: $Color-primary-100;
+      background-color: $Color-primary-200;
+      border: 2px solid $Color-primary-200;
+    }
+  }
+}
+
+.cars-info {
+  background-color: $Color-primary-200;
+  padding-top: 98px;
+  padding-bottom: 120px;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+
+  .cars-info-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $Color-secondary-100;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .select-wrapper {
+    display: flex;
+  }
+  .form-select {
+    border: 1px solid $Color-secondary-300;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.33;
+
+    /* header text */
+
+    color: #000000;
+  }
+  .col-sm-3 {
+    display: flex;
+    width: 170px;
+    height: 48px;
+    margin-right: 20px;
+
+    .mb-3 {
+      margin-bottom: 0 !important;
+    }
+  }
+  .btn-cars {
+    width: 290px;
+    height: 48px;
+    background-color: $Color-primary-300;
+    border: 2px solid $Color-primary-300;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.33;
+    color: $Color-primary-200;
+
+    &:hover,
+    &:focus {
+      background-color: inherit;
+      color: $Color-primary-300;
+    }
+  }
+}
+
+@import "../node_modules//bootstrap/scss/bootstrap.scss";
