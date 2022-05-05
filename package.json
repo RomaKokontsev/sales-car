@@ -1,13 +1,13 @@
 {
-  "name": "test-cars",
+  "name": "sales-car",
   "version": "1.0.0",
   "description": "test-cars",
   "main": "index.js",
-  "homepage": "https://RomaKokontsev.github.io/test-cars",
+  "homepage": "https://RomaKokontsev.github.io/sales-car",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url /test-cars/",
+    "predeploy": "npm run build -- --public-url /sales-cars/",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
