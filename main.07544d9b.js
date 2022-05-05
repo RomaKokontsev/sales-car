@@ -189,11 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\img\\hero-bg.jpg":[["hero-bg.3078b0d9.jpg","img/hero-bg.jpg"],"img/hero-bg.jpg"],"./..\\img\\success.svg":[["success.7ef1fb4b.svg","img/success.svg"],"img/success.svg"],"./..\\img\\Close.svg":[["Close.6f5c1949.svg","img/Close.svg"],"img/Close.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
-"use strict";
-
-require("./sass/main.scss");
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\img\\hero-bg.jpg":[["hero-bg.3078b0d9.jpg","img/hero-bg.jpg"],"img/hero-bg.jpg"],"./..\\img\\success.svg":[["success.7ef1fb4b.svg","img/success.svg"],"img/success.svg"],"./..\\img\\Close.svg":[["Close.6f5c1949.svg","img/Close.svg"],"img/Close.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -397,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/main.07544d9b.js.map
