@@ -1,0 +1,94 @@
+.popular-questions {
+  background-color: $Color-primary-200;
+  padding-top: 120px;
+  padding-bottom: 200px;
+  padding-left: 310px !important;
+  padding-right: 310px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &-title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* Color-secondary-100 */
+
+    color: $Color-secondary-100;
+    margin-bottom: 80px;
+  }
+  .questions-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    .question-item {
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+
+      & .button-open,
+      & .button-close {
+        border: none;
+        background-color: inherit;
+        padding: 0;
+      }
+
+      &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px 14px;
+        border-bottom: 1px solid #c4c4c4;
+      }
+
+      &-title {
+        margin: 0;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+
+        color: $Color-primary-100;
+      }
+
+      & .question-description {
+        padding: 24px 47px 24px 39px;
+        background-color: $Color-secondary-500;
+
+        &-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 24px;
+
+          .name-question {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            margin: 0;
+
+            color: $Color-primary-300;
+          }
+        }
+        .question-text {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 1.5;
+          /* or 20px */
+
+          color: #000000;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,313 @@
+.cars-info {
+  background-color: $Color-primary-200;
+  padding-top: 98px;
+  padding-bottom: 120px;
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+
+  .cars-info-title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: $Color-secondary-100;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .select-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    .select {
+      position: relative;
+      width: 170px;
+      height: 48px;
+      box-sizing: border-box;
+    }
+    .select.is-active .select__header {
+      border-bottom: none;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      & > .select__current {
+        font-weight: 600;
+      }
+
+      & > .select__icon {
+        opacity: 0;
+      }
+    }
+
+    .select.is-active .select__body {
+      display: block;
+    }
+
+    .select__header {
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      cursor: pointer;
+      display: flex;
+
+      &.close {
+        border-color: $Color-primary-300;
+      }
+    }
+
+    .select__current {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.33;
+      color: #000000;
+      padding: 13px 43px 12px 13px;
+    }
+    .select__icon {
+      align-items: center;
+      display: flex;
+      flex-shrink: 0;
+      justify-content: center;
+      height: 40px;
+      margin-left: auto;
+      text-align: center;
+      width: 40px;
+    }
+
+    .select__body {
+      border: 1px solid $Color-secondary-300;
+      border-top: 0;
+      display: none;
+      left: 0;
+      position: absolute;
+      z-index: 10;
+      background-color: $Color-primary-200;
+      right: 0;
+      top: 36px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .select__item {
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 12px;
+      color: #000000;
+      padding: 13px 43px 12px 13px;
+    }
+
+    .select__item:hover {
+      color: $Color-primary-300;
+    }
+    .btn-cars {
+      width: 290px;
+      height: 48px;
+      background-color: $Color-primary-300;
+      border: 2px solid $Color-primary-300;
+      border-radius: 15px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.33;
+      color: $Color-primary-200;
+
+      &:hover,
+      &:focus {
+        background-color: inherit;
+        color: $Color-primary-300;
+      }
+    }
+  }
+  .filter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    .form-check {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .form-check-input {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+
+      &:focus {
+        border-color: $Color-secondary-100;
+        box-shadow: none;
+      }
+      &:checked {
+        background-color: $Color-primary-300;
+      }
+      &:checked ~ .form-check-label {
+        color: $Color-primary-300;
+      }
+    }
+    .form-check-label {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.33;
+      color: $Color-secondary-200;
+    }
+
+    .filter {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+
+      &.is-open .filter-body {
+        display: block;
+      }
+
+      .filter-header {
+        display: flex;
+        align-items: center;
+
+        .filter-title {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 1.33;
+          color: #000000;
+          margin-right: 17px;
+        }
+
+        .filter-icon {
+          margin-right: 9px;
+        }
+        .current-filter {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 1.33;
+          color: $Color-secondary-200;
+          cursor: pointer;
+
+          &:hover {
+            color: $Color-primary-300;
+          }
+        }
+      }
+      .filter-body {
+        background-color: #ffffff;
+        z-index: 10;
+        border-radius: 15px;
+        padding: 12px;
+        margin-left: auto;
+        position: absolute;
+        display: none;
+        top: 25px;
+        right: -20px;
+
+        .filter-item {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 1.33;
+          color: $Color-primary-100;
+          margin-bottom: 12px;
+          cursor: pointer;
+
+          &:hover {
+            color: $Color-primary-300;
+          }
+        }
+      }
+    }
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    margin-right: -20px;
+
+    .car {
+      position: relative;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      list-style: none;
+      cursor: pointer;
+
+      &:hover .car-model {
+        text-decoration: underline;
+      }
+      &:nth-last-child(-n + 4) {
+        margin-bottom: 0;
+      }
+
+      .img-wrapper {
+        position: relative;
+      }
+      .new {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    .car-body {
+      background-color: #ffffff;
+      padding: 20px 20px 35px;
+      position: relative;
+
+      .sold {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff5d;
+        z-index: 10;
+        padding-top: 63px;
+        text-align: center;
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 75px;
+        color: $Color-secondary-500;
+
+        span {
+          position: absolute;
+          bottom: 247px;
+          right: 80px;
+        }
+      }
+
+      .car-main-info {
+        display: flex;
+        margin-bottom: 16px;
+
+        .car-year {
+          font-size: 17px;
+          line-height: 26px;
+          color: $Color-secondary-200;
+          margin-right: 8px;
+        }
+        .car-model {
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 23px;
+          color: #000000;
+        }
+      }
+      .car-description {
+        font-size: 14px;
+        line-height: 19px;
+        color: $Color-secondary-200;
+        margin-bottom: 26px;
+
+        .line {
+          margin-left: 8px;
+          margin-right: 8px;
+        }
+      }
+      .car-price {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        color: $Color-primary-100;
+        // margin: 0;
+      }
+    }
+  }
+}

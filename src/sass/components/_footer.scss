@@ -1,0 +1,36 @@
+.footer {
+  background-color: $Color-primary-100;
+  padding: 37px 100px 36px 80px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-list {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      .footer-item {
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+        .footer-link {
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 20px;
+          color: $Color-primary-200;
+          text-decoration: none;
+
+          &:hover {
+            color: $Color-primary-300;
+          }
+        }
+      }
+    }
+  }
+}
