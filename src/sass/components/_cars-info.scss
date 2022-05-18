@@ -26,25 +26,25 @@
       height: 48px;
       box-sizing: border-box;
     }
-    .select.is-active .select__header {
+    .select.is-active .select-header {
       border-bottom: none;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
 
-      & > .select__current {
+      & > .select-current {
         font-weight: 600;
       }
 
-      & > .select__icon {
+      & > .select-icon {
         opacity: 0;
       }
     }
 
-    .select.is-active .select__body {
+    .select.is-active .select-body {
       display: block;
     }
 
-    .select__header {
+    .select-header {
       border: 1px solid #ccc;
       border-radius: 15px;
       cursor: pointer;
@@ -55,14 +55,14 @@
       }
     }
 
-    .select__current {
+    .select-current {
       font-weight: 400;
       font-size: 15px;
       line-height: 1.33;
       color: #000000;
       padding: 13px 43px 12px 13px;
     }
-    .select__icon {
+    .select-icon {
       align-items: center;
       display: flex;
       flex-shrink: 0;
@@ -73,7 +73,7 @@
       width: 40px;
     }
 
-    .select__body {
+    .select-body {
       border: 1px solid $Color-secondary-300;
       border-top: 0;
       display: none;
@@ -86,7 +86,7 @@
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
     }
-    .select__item {
+    .select-item {
       cursor: pointer;
       font-weight: 400;
       font-size: 15px;
@@ -95,7 +95,7 @@
       padding: 13px 43px 12px 13px;
     }
 
-    .select__item:hover {
+    .select-item:hover {
       color: $Color-primary-300;
     }
     .btn-cars {
@@ -213,7 +213,7 @@
       }
     }
   }
-  .gallery {
+  .cars-gallery {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -235,7 +235,7 @@
         margin-bottom: 0;
       }
 
-      .img-wrapper {
+      .car-img-wrapper {
         position: relative;
       }
       .new {
