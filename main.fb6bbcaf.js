@@ -119,46 +119,46 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/main.js":[function(require,module,exports) {
 var select = function select() {
-  var selectHeader = document.querySelectorAll(".select__header");
-  var selectItem = document.querySelectorAll(".select__item");
+  var selectHeader = document.querySelectorAll('.select-header');
+  var selectItem = document.querySelectorAll('.select-item');
   selectHeader.forEach(function (item) {
-    item.addEventListener("click", selectToggle);
+    item.addEventListener('click', selectToggle);
   });
   selectItem.forEach(function (item) {
-    item.addEventListener("click", selectChoose);
+    item.addEventListener('click', selectChoose);
   });
 
   function selectToggle() {
-    this.parentElement.classList.toggle("is-active");
+    this.parentElement.classList.toggle('is-active');
   }
 
   function selectChoose() {
     var text = this.innerText,
-        select = this.closest(".select"),
-        currentText = select.querySelector(".select__current");
+        select = this.closest('.select'),
+        currentText = select.querySelector('.select-current');
     currentText.innerText = text;
-    select.classList.remove("is-active");
+    select.classList.remove('is-active');
   }
 };
 
 var filter = function filter() {
-  var filterHeader = document.querySelector(".filter-header");
-  var filterItem = document.querySelectorAll(".filter-item");
-  filterHeader.addEventListener("click", openModal);
+  var filterHeader = document.querySelector('.filter-header');
+  var filterItem = document.querySelectorAll('.filter-item');
+  filterHeader.addEventListener('click', openModal);
   filterItem.forEach(function (item) {
-    item.addEventListener("click", filterChoose);
+    item.addEventListener('click', filterChoose);
   });
 
   function openModal() {
-    this.parentElement.classList.toggle("is-open");
+    this.parentElement.classList.toggle('is-open');
   }
 
   function filterChoose() {
     var text = this.innerText,
-        select = this.closest(".filter"),
-        currentText = select.querySelector(".current-filter");
+        select = this.closest('.filter'),
+        currentText = select.querySelector('.current-filter');
     currentText.innerText = text;
-    select.classList.remove("is-open");
+    select.classList.remove('is-open');
   }
 };
 
@@ -192,7 +192,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63596" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62298" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
